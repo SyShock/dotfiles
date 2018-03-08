@@ -1,0 +1,33 @@
+{
+    "wallpaper": "../wallpapers/wallhaven-12012.jpg",
+    "special":{
+        "foreground": "#f7f2bd",
+        "background": "#000000",
+        "cursor": "#f7f2bd"
+    },
+    "colors":{
+        "color0":       "#121212",
+        "color8":       "#4f4f4f",
+ 
+        "color1":       "#eb9731",
+        "color9":       "#eb9731",
+
+        "color2":       "#96aa46",
+        "color10":      "#96aa46",
+
+        "color3":       "#eaa651",
+        "color11":      "#ab8e52",
+
+        "color4":       "#ab8e52",
+        "color12":      "#eaa651",
+
+        "color5":       "#facd65",
+        "color13":      "#facd65",
+
+        "color6":       "#777777",
+        "color14":      "#777777",
+
+        "color7":       "#f7f2bd",
+        "color15":      "#f7f2bd"
+    }
+}

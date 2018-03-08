@@ -1,0 +1,52 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "shift+f11",
+        "command": "workbench.action.toggleZenMode",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+left",
+        "command": "editor.fold",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "editor.unfold",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+enter",
+        "command": "moveOn.execute",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "Escape",
+        "command": "extension.jumpy-exit",
+        "when": "editorTextFocus && jumpy.isJumpyMode"
+    },
+    {
+        "key": "alt+enter",
+        "command": "extension.aceJump"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "indentation-level-movement.selectDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "indentation-level-movement.selectUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "indentation-level-movement.moveDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "indentation-level-movement.moveUp",
+        "when": "editorTextFocus"
+    }
+]

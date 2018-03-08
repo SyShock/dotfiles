@@ -1,0 +1,43 @@
+#if __has_include(".extend.Xresources")
+#include ".extend.Xresources"
+#endif
+! ^ The above lines are no comments!
+! Leave them as they are if a file ~/.extend.Xresources is being used on your system.
+
+!===========================
+!Global settings
+!===========================
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+!===============================
+!X settings
+!===============================
+Xcursor.size: 16
+
+!===============================
+!Color styles
+!===============================
+
+!#include ".xcolors/active.xcolor"
+#include ".cache/wal/colors.Xresources"
+
+!===============================
+!Terminal settings
+!===============================
+
+#include ".terminals/xterm.xrd"
+#include ".terminals/urxvt.xrd"
+
+!===============================
+!Application settings
+!===============================
+
+!#include "./rofirc"
+!#include ".config/rofi/rofi.xrd"

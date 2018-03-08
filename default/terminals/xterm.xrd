@@ -1,0 +1,35 @@
+!==========================================
+!xterm settings
+!==========================================
+
+XTerm*metaSendsEscape: true
+XTerm*vt100.translations: #override \
+	Ctrl ~Meta Shift <Key>a: string(0x1b) string("[65;5u") \n\
+	Ctrl ~Meta Shift <Key>b: string(0x1b) string("[66;5u") \n\
+	Ctrl ~Meta Shift <Key>f: string(0x1b) string("[70;5u") \n\
+	Ctrl ~Meta Shift <Key>z: string(0x1b) string("[71;5u") \n\
+	Ctrl ~Meta Shift <Key>d: string(0x1b) string("[72;5u") \n\
+	None<Key>BackSpace:	string(0x08) \n\
+	Ctrl<Key>BackSpace:	string(0x7F) \n\
+	None<Key>Delete:    string(0x7f) \n\
+	<Key>F12:		keymap(None)\n\
+	<Key>F1:		string("different keymap! ")
+!<FocusIn>:		set-vt-font(d) \n\
+!<FocusOut>:		set-vt-font(1)
+
+
+XTerm.VT100.otherKeymap.translations:  #override \
+
+xterm*background: #1c1c1c
+xterm*foreground: white
+xterm*highlightColor: #323232
+xterm*faceName: Inconsolata for Powerline:style=Regular
+xterm*faceSize: 11
+xterm*scrollBar: false
+xterm*colorBDMode: false
+xterm*visualBell: false
+xterm*saveLines: 512
+xterm*termName: xterm-256color
+xterm*utf: on
+xterm*utf8: on
+
