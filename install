@@ -6,14 +6,15 @@ Xaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1)
 Yaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f2) 
 XOffset=210
 YOffset=25
+height=$(($Yaxis/2+100))
 terminal_start_block="#quick terminal"
 terminal_end_block="##### END #####"
 
-i3_config='\
-  exec --no-startup-id urxvt -name 'metask' -e 'tmux' \n\
-  for_window [instance='metask'] floating enable; \n\
-  for_window [instance='metask'] move scratchpad; [instance='metask'] scratchpad show; move position ${XOffset}px ${YOffset}px; resize set $(($Xaxis-$XOffset*2))px $(($Yaxis/2))px;  move scratchpad \n\
-  bindsym $mod+grave [instance='metask'] scratchpad show'
+i3_config="\
+  exec --no-startup-id urxvt -name metask -e tmux \n\
+  for_window [instance=metask] floating enable; \n\
+  for_window [instance=metask] move scratchpad; [instance=metask] scratchpad show; move position ${XOffset}px ${YOffset}px; resize set $(($Xaxis-$XOffset*2))px ${height}px;  move scratchpad \n\
+  bindsym \$mod+grave [instance=metask] scratchpad show"
 
 set -e
 

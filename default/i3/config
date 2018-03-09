@@ -458,12 +458,8 @@ exec_always xrdb ~/.Xresources
 
 
 #quick terminal
-
   exec --no-startup-id urxvt -name metask -e tmux 
-
   for_window [instance=metask] floating enable; 
-
-  for_window [instance=metask] move scratchpad; [instance=metask] scratchpad show; move position ${XOffset}px ${YOffset}px; resize set $(($Xaxis-$XOffset*2))px $(($Yaxis/2))px;  move scratchpad 
-
+  for_window [instance=metask] move scratchpad; [instance=metask] scratchpad show; move position 210px 25px; resize set 1500px 640px;  move scratchpad 
   bindsym $mod+grave [instance=metask] scratchpad show
 ##### END #####
