@@ -2,9 +2,10 @@
 
 echo Remember the real files are in /default, keep in mind when making relative links
 
-Xaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1) 
-Yaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f2) 
-XOffset=210
+calc_from_monitor=1
+Xaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1 | sed "${calc_from_monitor}!d") 
+Yaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f2 | sed "${calc_from_monitor}!d")
+XOffset=160
 YOffset=25
 height=$(($Yaxis/2+100))
 terminal_start_block="#quick terminal"
