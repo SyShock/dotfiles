@@ -1,18 +1,27 @@
 # Manjaro Setup
 
-Uses:
-- dotbot
-- i3-gaps
-- polybar
-- dunst
-- urxvt
-- nvim
-- feh
-- wal
-- oomox
-- xrandr
+### Uses:
+- i3-gaps (window manager)
+- polybar (top status bar)
+- dunst (notifications)
+- urxvt (terminal emulator)
+- nvim (text editor)
+- fish (terminal shell)
+- feh (background manager)
+- pywal (python script to generate colorschemes based on image)
+- oomox (GTK custom theming)
+- xrandr (configuration utility for monitors; used by the script to get monitor resolution)
+- powerline (python lib for powerline characters)
 
-To install the dotfiles just backup your original config files and run `cd dotfiles && ./install`
+### Also:
+- python nvim addon
+- node nvim package
+
+(these are required for nvim, best to check-in with`:checkhealth` for more info on nvim dependencies)
+
+##### These are the things I can think of as dependencies. There may be more that I have not listed.
+
+---
 
 Note that the current theme uses:
 - ultra flat icons orange
