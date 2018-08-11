@@ -1,4 +1,4 @@
-# i3 config file (v4)
+Q# i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
@@ -27,19 +27,6 @@ set_from_resource $background      background
 set_from_resource $cursor      cursor 
 
 set $transparent #000000B0
-
-workspace 0:0 output $monitor
-workspace 1:1 output $monitor
-workspace 2:2 output $monitor
-workspace 3:3 output $monitor
-
-workspace "20:." output $monitor2
-workspace "21:A" output $monitor2
-workspace "22:B" output $monitor2
-workspace "23:C" output $monitor2
-
-
-
 
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
@@ -468,12 +455,11 @@ exec synclient TapButton1=1 TapButton2=3 TapButton3=2
 # i3 config file (v4)
 exec xset b off 4
 exec_always xrdb ~/.Xresources
-exec sranrdrd autorandr --change --default
+
 
 #quick terminal
   exec --no-startup-id urxvt -name metask -e tmux 
   for_window [instance=metask] floating enable; 
   for_window [instance=metask] move scratchpad; [instance=metask] scratchpad show; move position 210px 25px; resize set 946px 484px;  move scratchpad 
-  bindsym $mod+F1 exec ~/.dotfiles/sine_easing.sh
   bindsym $mod+grave [instance=metask] scratchpad show
 ##### END #####

@@ -17,7 +17,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "
 " VISUAL PLUGINS
 "
-
+"NeoBundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'junegunn/goyo.vim'
@@ -72,12 +72,12 @@ NeoBundle 'Quramy/tsuquyomi'
 NeoBundle 'Shougo/neco-vim'
 NeoBundle 'Shougo/deoplete.nvim',
 	  \{ 'do': ':UpdateRemotePlugins' }
-NeoBundle 'mhartington/deoplete-typescript'
+"NeoBundle 'mhartington/deoplete-typescript'
 NeoBundle 'ternjs/tern_for_vim'
-NeoBundle 'carlitux/deoplete-ternjs', 
-	  \{ 'build': 
-		\{ 'mac': 'npm install -g tern', 'unix': 'npm install -g tern' }
-	  \}
+"NeoBundle 'carlitux/deoplete-ternjs', 
+"	  \{ 'build': 
+"		\{ 'mac': 'npm install -g tern', 'unix': 'npm install -g tern' }
+"	  \}
 
 "
 " PERFROMANCE PLUGINS

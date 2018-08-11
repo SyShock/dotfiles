@@ -1,6 +1,7 @@
 #Link files
 bass source $HOME/Scripts/bash/set_fish_colorscheme.sh 
 set fish_color_search_match "$fish_color_search_match " "$fish_color_search_match_bg" #done here, because bash cannot export arrays
+bass source $HOME/Downloads/git/emsdk/emsdk_env.sh > /dev/null
 
 #Variable Paths
 export DOTFILES="$HOME/.dotfiles/default"
@@ -10,6 +11,7 @@ export SCRIPTS="$HOME/Scripts"
 #Additional Paths
 export PATH="$PATH:$SCRIPTS/bash"
 export PATH="$PATH:$SCRIPTS/ffmpeg"
+#export PATH="$PATH:$HOME/.gem/ruby/2.5.0/bin"
 
 #Aliases
 
@@ -35,8 +37,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export ANDROID_HOME="/home/void/Android/Sdk"
 #export VIMPERATOR_RUNTIME="$XDG_CONFIG_HOME/vimperator"
 #export VIMPERATOR_INIT=":source $VIMPERATOR_RUNTIME/vimperatorrc"
-#export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
-#export PATH="$PATH:$HOME/swift"
+export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
 #export PATH="$PATH:$HOME/.gem/ruby/2.4.0/bin"
 
 export BROWSER="/usr/bin/firefox"

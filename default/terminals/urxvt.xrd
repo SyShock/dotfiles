@@ -14,13 +14,15 @@ URxvt*scrollTtyKeypress: true
 !URxvt.font: xft:Inconsolata for Powerline:size=12
 !URxvt.font: xft:xos4 Terminess Powerline:size=8
 !URxvt.font: xft:Dina :size=10
-URxvt.font: xft:xos4 Terminess Powerline:size=8
+!!URxvt.font: xft:xos4 Terminess Powerline:size=8
 !URxvt.font: xft:GohuFont Powerline :size=8
 !URxvt.font: 8x13
 !URxvt.font: xft:Droid Sans Nerd Font:pixelsize=16:antialias=true:hinting=true
 !URxvt.font: xft:ProggyCleanTT Nerd Font:style=Regular:size=12
-!URxvt.boldFont: xft:Anonymice Nerd Font:style=Regular:size=10
-!URxvt.font: xft:TerminusTTF Nerd Font:style=Regular:size=10:antialias=false:hinting=false
+!URxvt.font: xft:Anonymice Nerd Font:style=Regular:size=11
+!URxvt.boldFont: xft:Anonymice Nerd Font:style=Regular:size=31
+URxvt.font: xft:TerminessTTF Nerd Font:style=Regular:size=12
+!URxvt.font: xft:TerminusTTF Nerd Font:style=Medium:size=10:antialias=false:hinting=false
 !URxvt.boldFont: xft:TerminusTTF Nerd Font:style=Regular:bold:size=10:antialias=true:hinting=true
 
 URxvt.url-launcher: /usr/bin/xdg-open
