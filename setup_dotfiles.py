@@ -75,6 +75,7 @@ def recover(path, source):
         os.remove(path)
 
 def main():
+    print("WARNING: I've yet to test this script thoroughly. USE AT OWN RISK!")
     print("Dotfiles script:")
     option = input("[i]nstall or [r]ecover or [e]xit:\n")
     if option == "i":
