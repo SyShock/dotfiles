@@ -1,0 +1,3 @@
+[submodule ".dotfm"]
+	path = .dotfm
+	url = https://github.com/SyShock/dotfm
