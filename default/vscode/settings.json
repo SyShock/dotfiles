@@ -27,5 +27,6 @@
         "pickerGroup.foreground": "#FF7042",
         "tab.activeBorder": "#FF7042"
     },
-    "python.jediEnabled": false
+    "python.jediEnabled": false,
+    "terminal.integrated.rendererType": "dom"
 }

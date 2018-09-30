@@ -13,6 +13,10 @@
 ### Also:
 - python nvim addon
 - node nvim package
+- jsoncpp
+- mpd
+- tmux
+- net-tools
 
 (these are required for nvim, best to check-in with`:checkhealth` for more info on nvim dependencies)
 
