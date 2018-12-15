@@ -1,5 +1,23 @@
 {
     "default": { 
+        "dependencies": {
+            "i3-gaps": "",
+            "polybar": "",
+            "dunst": "",
+            "urxvt": "",
+            "fish": "",
+            "fisherman": "",
+            "feh": "",
+            "vscode": "",
+            "pywal": "",
+            "oomox": "",
+            "tmux": "",
+            "mpd": "",
+            "nvim": "",
+            "fnm": "",
+            "jsoncpp": "",
+            "net-tools": ""
+        },
         "links":{
             "~/.dotfiles": "./",
             "~/.shellrc": "default/shell/shellrc",

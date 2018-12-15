@@ -18,11 +18,11 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " VISUAL PLUGINS
 "
 "NeoBundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
-NeoBundle 'mhinz/vim-signify'
-NeoBundle 'terryma/vim-multiple-cursors'
+"NeoBundle 'mhinz/vim-signify'
+"NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'junegunn/goyo.vim'
-NeoBundle 'itchyny/lightline.vim'
-NeoBundle 'flazz/vim-colorschemes'
+"NeoBundle 'itchyny/lightline.vim'
+"NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'dylanaraps/wal'
 
 
@@ -30,50 +30,50 @@ NeoBundle 'dylanaraps/wal'
 " FORMATTING PLUGINGS
 "
 
-NeoBundle 'sbdchd/neoformat'
-NeoBundle 'rhysd/vim-grammarous'
-NeoBundle 'godlygeek/tabular'
-NeoBundle 'matze/vim-move'
-NeoBundle 'editorconfig/editorconfig-vim'
+"NeoBundle 'sbdchd/neoformat'
+"NeoBundle 'rhysd/vim-grammarous'
+"NeoBundle 'godlygeek/tabular'
+"NeoBundle 'matze/vim-move'
+"NeoBundle 'editorconfig/editorconfig-vim'
 
 
 "
 " SELECTION AND TRAVERSAL
 "
 
-NeoBundle 'terryma/vim-expand-region'
-NeoBundle 'sheerun/vim-polyglot'
-NeoBundle 'MattesGroeger/vim-bookmarks'
+"NeoBundle 'terryma/vim-expand-region'
+"NeoBundle 'sheerun/vim-polyglot'
+"NeoBundle 'MattesGroeger/vim-bookmarks'
 
 "
 " BACKENDS AND PANELS
 "
 
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'jlanzarotta/bufexplorer'
-NeoBundle 'devjoe/vim-codequery'
+"NeoBundle 'tpope/vim-fugitive'
+"NeoBundle 'jlanzarotta/bufexplorer'
+"NeoBundle 'devjoe/vim-codequery'
 NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'majutsushi/tagbar'
-NeoBundle 'Shougo/denite.nvim'
+"NeoBundle 'majutsushi/tagbar'
+"NeoBundle 'Shougo/denite.nvim'
 
-NeoBundle 'KabbAmine/zeavim.vim'
-NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+"NeoBundle 'KabbAmine/zeavim.vim'
+"NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 
 
 "
 " AUTOCOMPLETION PLUGINS
 "
 
-NeoBundle 'metakirby5/codi.vim'
-NeoBundle 'honza/vim-snippets'
-NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'Quramy/tsuquyomi'
-NeoBundle 'Shougo/neco-vim'
-NeoBundle 'Shougo/deoplete.nvim',
-	  \{ 'do': ':UpdateRemotePlugins' }
+"NeoBundle 'metakirby5/codi.vim'
+"NeoBundle 'honza/vim-snippets'
+"NeoBundle 'Shougo/neosnippet.vim'
+"NeoBundle 'Shougo/neosnippet-snippets'
+"NeoBundle 'Quramy/tsuquyomi'
+"NeoBundle 'Shougo/neco-vim'
+"NeoBundle 'Shougo/deoplete.nvim',
+"	  \{ 'do': ':UpdateRemotePlugins' }
 "NeoBundle 'mhartington/deoplete-typescript'
-NeoBundle 'ternjs/tern_for_vim'
+"NeoBundle 'ternjs/tern_for_vim'
 "NeoBundle 'carlitux/deoplete-ternjs', 
 "	  \{ 'build': 
 "		\{ 'mac': 'npm install -g tern', 'unix': 'npm install -g tern' }
@@ -88,12 +88,12 @@ NeoBundle 'xolox/vim-session'
 
 
 NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'ap/vim-css-color'
-NeoBundle 'PotatoesMaster/i3-vim-syntax'
-NeoBundle 'vim-syntastic/syntastic'
-NeoBundle 'HerringtonDarkholme/yats.vim' 
-NeoBundle 'heavenshell/vim-jsdoc'
-NeoBundle 'xolox/vim-misc'
+"NeoBundle 'ap/vim-css-color'
+"NeoBundle 'PotatoesMaster/i3-vim-syntax'
+"NeoBundle 'vim-syntastic/syntastic'
+"NeoBundle 'HerringtonDarkholme/yats.vim' 
+"NeoBundle 'heavenshell/vim-jsdoc'
+"NeoBundle 'xolox/vim-misc'
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
 \     'windows' : 'tools\\update-dll-mingw',
@@ -107,7 +107,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 
 " You can specify revision/branch/tag.
 
-NeoBundle "tkhren/vim-fake"
+"NeoBundle "tkhren/vim-fake"
 
 
 " Required:
