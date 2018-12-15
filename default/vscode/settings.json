@@ -28,5 +28,8 @@
         "tab.activeBorder": "#FF7042"
     },
     "python.jediEnabled": false,
-    "terminal.integrated.rendererType": "dom"
+    "terminal.integrated.rendererType": "dom",
+    "breadcrumbs.enabled": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "window.titleBarStyle": "native"
 }

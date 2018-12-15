@@ -1,45 +1,47 @@
-#Link files
+#################################################
+# Link files
 bass source $HOME/Scripts/bash/set_fish_colorscheme.sh 
 set fish_color_search_match "$fish_color_search_match " "$fish_color_search_match_bg" #done here, because bash cannot export arrays
 bass source $HOME/Downloads/git/emsdk/emsdk_env.sh > /dev/null
 
-#Variable Paths
+##################################################
+# Variable Paths
 export DOTFILES="$HOME/.dotfiles/default"
 export INIT_FILES="$DOTFILES/onInit"
 export SCRIPTS="$HOME/Scripts"
+export RANGER_LOAD_DEFAULT_RC=FALSE
+export XDG_CONFIG_HOME="$HOME/.config"
+export ANDROID_HOME="/home/void/Android/Sdk"
+export BROWSER="/usr/bin/firefox"
+export EDITOR="/usr/bin/nvim"
+export NVM_DIR="$HOME/.nvm"
+#export VIMPERATOR_RUNTIME="$XDG_CONFIG_HOME/vimperator"
+#export VIMPERATOR_INIT=":source $VIMPERATOR_RUNTIME/vimperatorrc"
+#export PATH="$PATH:$HOME/.gem/ruby/2.4.0/bin"
 
-#Additional Paths
+###################################################
+# Additional Paths
 export PATH="$PATH:$SCRIPTS/bash"
 export PATH="$PATH:$SCRIPTS/ffmpeg"
+export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
 #export PATH="$PATH:$HOME/.gem/ruby/2.5.0/bin"
 
-#Aliases
+###################################################
+# Aliases
 
+# Shell Functions
 
-#Functions
-
-#Keybindings
+###################################################
+# Keybindings
 function fish_user_key_bindings
  bind \cF "'fzf' $FZF_CONFIG"
  bind \eF "fzf --preview 'head -100 {}' $FZF_CONFIG"
- bind \e\[33~ backward-kill-word
+ bind [50~ backward-kill-word
 end
 
 funcsave fish_user_key_bindings
 
-#FZF
+####################################################
+# FZF
 export FZF_CONFIG="--bind 'Enter:execute(nvim {}),ctrl-y:execute-silent(echo {} | xclip)+abort'"
 
-#General Settings
-
-export RANGER_LOAD_DEFAULT_RC=FALSE
-export XDG_CONFIG_HOME="$HOME/.config"
-export ANDROID_HOME="/home/void/Android/Sdk"
-#export VIMPERATOR_RUNTIME="$XDG_CONFIG_HOME/vimperator"
-#export VIMPERATOR_INIT=":source $VIMPERATOR_RUNTIME/vimperatorrc"
-export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
-#export PATH="$PATH:$HOME/.gem/ruby/2.4.0/bin"
-
-export BROWSER="/usr/bin/firefox"
-export EDITOR="/bin/nvim"
-export NVM_DIR="$HOME/.nvm"
