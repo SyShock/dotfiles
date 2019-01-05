@@ -1,10 +1,21 @@
 "=================Normal mode
+map <A-1> 1gt
+map <A-2> 2gt
+map <A-3> 3gt
+map <A-4> 4gt
+map <A-5> 5gt
+map <A-6> 6gt
+map <A-7> 7gt
+map <A-8> 8gt
+map <A-9> 8gt
+
 
 "=================Quick load
+let $DOTFILES=$HOME.'/.dotfiles/default'
 map <Space>vi :Explore $HOME/.config/nvim/config<CR>
 map <Space>dot :Explore $DOTFILES<CR>
 map <Space>xr :edit $HOME/.Xresources<CR>
-map <Space>vt :edit $HOME/.shellrc<CR>
+map <Space>sh :edit $HOME/.shellrc<CR>
 map <Space>i3 :edit $HOME/.i3/config<CR>
 map <Space>stat :edit $DOTFILES/polybar/config<CR>
 map <Space>Xr :edit #HOME/.Xresources<CR>

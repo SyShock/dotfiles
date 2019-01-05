@@ -1,13 +1,24 @@
-#
-# ~/.xprofile
-#
-#
+#!/bin/bash
+# ~./,xprofile
 
-# if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
-#     eval "$(dbus-launch --sh-syntax --exit-with-session)"
-# fi
+# KEYBOARD MAP
+# available options are in /usr/share/X11/xkb/rules/evdev.lst
+    # -option ctrl:nocaps \
+    # -option compose:lctrl \
 
-# Environment variables
-#
+setxkbmap \
+    -layout us,bg \
+    -variant ,phonetic \
+    -option grp:alt_caps_toggle
 
-[[ -f ~/.extend.xprofile ]] && . ~/.extend.xprofile
+# sets all of the above + turns space into Hyper_L that is another Ctrl
+# xkbcomp ~/ "$DISPLAY"
+
+# space acts as ctrl when used as modifier and as space when used alone
+# capsloc acts as ctrl when used as modifier and as escape when used alone
+# xcape -e "Hyper_L=space;Control_L=Escape"
+
+# KEY REPEAT
+xset r rate 250 30
+
+# [[ -f ~/.extend.xprofile ]] && . ~/.extend.xprofile

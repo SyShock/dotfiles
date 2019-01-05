@@ -1,22 +1,24 @@
 {
     "default": { 
         "dependencies": {
-            "i3-gaps": "",
-            "polybar": "",
-            "dunst": "",
+            "i3-gaps": "https://github.com/Airblader/i3",
+            "polybar": "https://github.com/jaagr/polybar",
+            "dunst": "https://github.com/dunst-project/dunst",
             "urxvt": "",
-            "fish": "",
-            "fisherman": "",
-            "feh": "",
-            "vscode": "",
-            "pywal": "",
-            "oomox": "",
-            "tmux": "",
-            "mpd": "",
-            "nvim": "",
-            "fnm": "",
-            "jsoncpp": "",
-            "net-tools": ""
+            "fish": "https://github.com/fish-shell/fish-shell",
+            "fisher": "https://github.com/jorgebucaran/fisher",
+            "feh": "https://github.com/derf/feh",
+            "vscode": "https://github.com/Microsoft/vscode",
+            "pywal": "https://github.com/dylanaraps/pywal",
+            "oomox": "https://github.com/themix-project/oomox",
+            "tmux": "https://github.com/tmux/tmux",
+            "mpd": "https://github.com/MusicPlayerDaemon/MPD",
+            "nvim": "https://github.com/neovim/neovim",
+            "fnm": "https://github.com/jorgebucaran/fnm",
+            "jsoncpp": "https://github.com/open-source-parsers/jsoncpp",
+            "net-tools": "",
+            "fonts": "Ubuntu Nerd Font, TerminessTTF Nerd Font",
+            "icons & etc": "In the Readme"
         },
         "links":{
             "~/.dotfiles": "./",
@@ -32,16 +34,17 @@
             "~/.xcolors": "default/xcolors",
             "~/.terminals": "default/terminals",
             "~/Scripts": "default/scripts",
-            "~/.profile": "default/xinit/profile",
+            "~/.gtkrc-2.0.mine": "default/gtk/gtkrc-2.0.mine",
+            "~/.config/gtk-3.0/settings.ini": "default/gtk/gtkrc-3.0",
+            "~/.profile": "default/shell/profile",
             "~/.xprofile": "default/xinit/xprofile",
-            "~/.Xclients": "default/xinit/xclients",
             "~/.xinitrc": "default/xinit/xinitrc",
-            "~/.xsession": "default/xinit/xsession",
             "~/.config/rofi": "default/rofi",
             "~/.config/polybar": "default/polybar",
             "~/.config/nvim/config": "default/nvim",
             "~/.config/Code/User": "default/vscode",
-            "~/.config/dunst": "default/dunst"
+            "~/.config/dunst": "default/dunst",
+            "~/.xbindkeys":"default/xinit/xbindkeys"
         }
     }
 }

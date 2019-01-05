@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# ~/.profile
+
+# XDG ------------------------------------------------------------------------
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+
+# DEFAULT APPS ---------------------------------------------------------------
+export BROWSER="firefox"
+export EDITOR="nvim"
+export PAGER="less"
+export VISUAL="code"
+
+# PATHS ----------------------------------------------------------------------
+
+# PYTHON ---------------------------------------------------------------------
+# export PYTHONDOCS="/usr/share/doc/python2/html/"
+# export PYTHONOPTIMIZE="2"
+# export PYTHONSTARTUP="$HOME/.pythonrc.py"
+export IPYTHONDIR="$XDG_CONFIG_HOME/jupyter"
+export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME/jupyter"
+
+# WINE -----------------------------------------------------------------------
+# export WINEARCH="win32"
+export WINEDEBUG="-all"
+
+# XAUTH ----------------------------------------------------------------------
+# export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+
+# LESS -----------------------------------------------------------------------
+export LESS="-FXRi"
+export LESSHISTFILE="/dev/null"
+
+[[ "$XDG_CURRENT_DESKTOP" == "KDE" ]] || [[ "$XDG_CURRENT_DESKTOP" == "GNOME" ]] || export QT_QPA_PLATFORMTHEME="qt5ct"
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
+
+# [[ -f ~/.extend.profile ]] && . ~/.extend.profile

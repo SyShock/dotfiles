@@ -9,7 +9,6 @@
     "editor.renderIndentGuides": false,
     "workbench.iconTheme": "material-icon-theme",
     "vsicons.projectDetection.autoReload": true,
-    "workbench.colorTheme": "Material Theme",
     "materialTheme.cache.workbench.settings": {
         "themeColours": "Darker High Contrast",
         "accent": "Orange",

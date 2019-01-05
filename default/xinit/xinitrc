@@ -1,5 +1,6 @@
 #!/bin/sh
-#
+# This script runs when X is started
+
 # ~/.xinitrc
 #
 # Executed by startx (run your window manager from here)
@@ -40,5 +41,12 @@ get_session(){
 
 	echo "dbus-launch ${dbus_args[*]}"
 }
+
+# GENERAL SETTINGS
+[[ -f ~/.xprofile ]] && . ~/.xprofile
+#[[ -f ~/.xsession ]] && . ~/.xsession
+
+# KEYBOARD SHORTCUTS
+# [[ -f ~/.xbindkeys ]] && xbindkeys -f "~/.xbindkeys"
 
 exec $(get_session)

@@ -49,7 +49,7 @@ module-margin-left = 1
 module-margin-right = 2
 
 ;font-0 = fixed:pixelsize=10;1
-font-0 =  Ubuntu Nerd Font:Medium:pixelsize=9;1
+font-0 =  Ubuntu Nerd Font:Regular:pixelsize=9;1
 font-1 = unifont:fontformat=truetype:size=18:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
@@ -194,7 +194,7 @@ card = intel_backlight
 
 [module/temppercore]
 type = custom/script
-exec = exec sensors | grep Core | awk '{print substr($3, 2, length($3)-5)}' | tr "\\n" " " | sed 's/ /°C  /g' | sed 's/  $//'
+exec = exec sensors 2>/dev/null | grep Core | awk '{print substr($3, 2, length($3)-5)}' | tr "\\n" " " | sed 's/ /°C  /g' | sed 's/  $//'
 interval = 60
 
 [module/socket-num]
@@ -203,7 +203,7 @@ exec = exec netstat -ntu | wc -l
 interval = 2
 format-prefix = "  "
 format-prefix-foreground = ${colors.foreground-alt}
-click-left = urxvt -e sh -c "netstat -ntu -ope | less"
+click-left = urxvt -e sh -c "netstat -ntu -ope | less" &
 
 [module/process-num]
 type = custom/script
@@ -211,7 +211,7 @@ exec = exec ps -A | wc -l
 interval = 2
 format-prefix = "  "
 format-prefix-foreground = ${colors.foreground-alt}
-click-left = urxvt -e sh -c "ps -A | less"
+click-left = urxvt -e sh -c "ps -A | less" &
 
 [module/cpu]
 type = internal/cpu
@@ -336,9 +336,9 @@ ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-foreground = ${colors.foreground-alt}
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
+animation-charging-0 = 
+;animation-charging-1 = 
+;animation-charging-2 = 
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
@@ -356,9 +356,9 @@ label = %temperature%
 label-warn = %temperature%
 label-warn-foreground = ${colors.secondary}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
+ramp-0 = 
+;ramp-1 = 
+;ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
 
 [module/powermenu]
